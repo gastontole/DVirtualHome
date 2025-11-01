@@ -280,9 +280,17 @@ static NSString *currentApplicationIdentifier = nil;
 
 -(void)doubleTapUp:(id)arg1 {
 	if (isEnabled) {
-		[self performAction:doubleTapAction];
+		// Abrir App Switcher directamente
+		SBMainSwitcherViewController *switcher = [%c(SBMainSwitcherViewController) sharedInstance];
+		if ([switcher respondsToSelector:@selector(toggleSwitcher)]) {
+			[switcher toggleSwitcher];
+		} else {
+			// Fallback a performAction por si falla
+			[self performAction:doubleTapAction];
+		}
 	} else {
 		%orig(arg1);
+
 	}
 }
 
