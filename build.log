@@ -1,0 +1,616 @@
+[1;31m> [1;3;39mMaking all for tweak DVirtualHome…[m
+[0;31m==> [1;39mPreprocessing Tweak.xm…[m
+[0;31m==> [1;39mPreprocessing Tweak.xm…[m
+[0;32m==> [1;39mCompiling Tweak.xm (arm64)…[m
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m<built-in>:1:10: [0m[0;1;31mfatal error: [0m[1m'/home/gaston/theos/Prefix.pch' file not found[0m
+#include "/home/gaston/theos/Prefix.pch"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreFoundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:
+While building module 'Darwin' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:16:
+While building module 'std' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/__type_traits/promote.h:16:
+In file included from <module-includes>:17:
+In file included from /home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/math.h:301:
+In file included from /home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/stdlib.h:20:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/stdlib.h:93:15: [0m[0;1;31mfatal error: [0m[1mcyclic dependency in module 'Darwin': Darwin -> std -> Darwin[0m
+#include_next <stdlib.h>
+[0;1;32m              ^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreFoundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:
+While building module 'Darwin' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:16:
+In file included from <module-includes>:89:
+In file included from /home/gaston/theos/toolchain/linux/iphone/lib/clang/10.0.0/include/tgmath.h:13:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/math.h:308:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/__type_traits/promote.h:16:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'std'[0m
+#include <cstddef>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreFoundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:16:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <sys/types.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreFoundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:
+While building module 'Dispatch' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFStream.h:20:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/dispatch/dispatch.h:25:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <Availability.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreFoundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:
+While building module 'Dispatch' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFStream.h:20:
+While building module 'os_object' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/dispatch/dispatch.h:63:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/os/object.h:25:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <Availability.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreFoundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:
+While building module 'Dispatch' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFStream.h:20:
+While building module 'os_workgroup' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/dispatch/dispatch.h:64:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/os/workgroup.h:29:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/os/workgroup_base.h:8:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <sys/types.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'CoreFoundation'[0m
+#include <CoreFoundation/CoreFoundation.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'ObjectiveC' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:6:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'ObjectiveC' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:6:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/objc/./objc.h:31:
+[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/stdlib.h:100:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'std'[0m
+#include <math.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'Security' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h:9:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h:27:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Security.framework/Headers/SecBase.h:27:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <TargetConditionals.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreServices' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLError.h:15:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:9:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreServices.framework/Headers/UTCoreTypes.h:19:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'CoreFoundation'[0m
+#include <CoreFoundation/CoreFoundation.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:9: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Foundation'[0m
+#import <Foundation/Foundation.h>
+[0;1;32m ~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreGraphics' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h:10:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreGraphics' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h:10:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:8:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBase.h:11:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <TargetConditionals.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreImage' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h:13:
+In file included from <module-includes>:1:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.h:9:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImageDefines.h:11:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <TargetConditionals.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreImage' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h:13:
+While building module 'CoreVideo' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImage.h:15:
+In file included from <module-includes>:1:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CoreVideo.h:16:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <TargetConditionals.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreImage' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h:13:
+While building module 'ImageIO' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImage.h:16:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreImage' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h:13:
+While building module 'ImageIO' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImage.h:16:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h:10:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIOBase.h:16:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'CoreFoundation'[0m
+#include <CoreFoundation/CoreFoundation.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreImage' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h:13:
+While building module 'IOSurface' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImage.h:21:
+In file included from <module-includes>:1:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/IOSurface.framework/Headers/IOSurfaceBase.h:12:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <sys/cdefs.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreImage' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h:13:
+While building module 'Metal' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIRenderDestination.h:22:
+In file included from <module-includes>:1:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.h:8:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h:8:9: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#import <os/availability.h>
+[0;1;32m ~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'QuartzCore' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h:10:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'QuartzCore' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h:10:
+In file included from <module-includes>:1:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h:9:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CoreAnimation.h:9:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CABase.h:16:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'CoreFoundation'[0m
+#include <CoreFoundation/CoreFoundation.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'QuartzCore' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h:10:
+While building module 'OpenGLES' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAEAGLLayer.h:7:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h:4:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h:45:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:4:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <os/availability.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'FileProvider' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h:15:
+In file included from <module-includes>:1:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h:16:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderDomain.h:8:9: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Foundation'[0m
+#import <Foundation/Foundation.h>
+[0;1;32m ~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'UserNotifications' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UNNotificationResponse+UIKitAdditions.h:10:
+In file included from <module-includes>:1:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.h:8:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/NSString+UserNotifications.h:8:9: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Foundation'[0m
+#import <Foundation/Foundation.h>
+[0;1;32m ~~~~~~~^
+[0mWhile building module 'AudioToolbox' imported from /home/gaston/DVirtualHome/DVirtualHome.h:2:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h:14:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <Availability.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'AudioToolbox' imported from /home/gaston/DVirtualHome/DVirtualHome.h:2:
+While building module 'CoreAudioTypes' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioComponent.h:169:
+In file included from <module-includes>:1:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.h:8:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioBaseTypes.h:17:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <TargetConditionals.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'AudioToolbox' imported from /home/gaston/DVirtualHome/DVirtualHome.h:2:
+While building module 'CoreMIDI' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AUAudioUnit.h:17:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreMIDI.framework/Headers/CoreMIDI.h:18:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreMIDI.framework/Headers/MIDIServices.h:73:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <Availability.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'notify' imported from Tweak.xm:2:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/notify.h:29:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <sys/cdefs.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'CydiaSubstrate' imported from /home/gaston/theos/vendor/include/substrate.h:1:
+While building module 'MachO' imported from /home/gaston/theos/vendor/lib/CydiaSubstrate.framework/Headers/CydiaSubstrate.h:42:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0mWhile building module 'CydiaSubstrate' imported from /home/gaston/theos/vendor/include/substrate.h:1:
+While building module 'MachO' imported from /home/gaston/theos/vendor/lib/CydiaSubstrate.framework/Headers/CydiaSubstrate.h:42:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/mach-o/dyld.h:31:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/mach-o/loader.h:36:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <mach/machine.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'CydiaSubstrate' imported from /home/gaston/theos/vendor/include/substrate.h:1:
+In file included from <module-includes>:1:
+[1m/home/gaston/theos/vendor/lib/CydiaSubstrate.framework/Headers/CydiaSubstrate.h:42:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'MachO'[0m
+#include <mach-o/nlist.h>
+[0;1;32m ~~~~~~~~^
+[0m42 errors generated.
+make[3]: *** [/home/gaston/theos/makefiles/instance/rules.mk:417: /home/gaston/DVirtualHome/.theos/obj/debug/arm64/Tweak.xm.8d54a907.o] Error 1
+rm /home/gaston/DVirtualHome/.theos/obj/debug/arm64/Tweak.xm.mm
+make[2]: *** [/home/gaston/theos/makefiles/instance/library.mk:52: /home/gaston/DVirtualHome/.theos/obj/debug/arm64/DVirtualHome.dylib] Error 2
+make[2]: *** Waiting for unfinished jobs....
+[0;32m==> [1;39mCompiling Tweak.xm (arm64e)…[m
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m<built-in>:1:10: [0m[0;1;31mfatal error: [0m[1m'/home/gaston/theos/Prefix.pch' file not found[0m
+#include "/home/gaston/theos/Prefix.pch"
+[0;1;32m         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreFoundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:
+While building module 'Darwin' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:16:
+While building module 'std' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/__type_traits/promote.h:16:
+In file included from <module-includes>:17:
+In file included from /home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/math.h:301:
+In file included from /home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/stdlib.h:20:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/stdlib.h:93:15: [0m[0;1;31mfatal error: [0m[1mcyclic dependency in module 'Darwin': Darwin -> std -> Darwin[0m
+#include_next <stdlib.h>
+[0;1;32m              ^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreFoundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:
+While building module 'Darwin' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:16:
+In file included from <module-includes>:89:
+In file included from /home/gaston/theos/toolchain/linux/iphone/lib/clang/10.0.0/include/tgmath.h:13:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/math.h:308:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/__type_traits/promote.h:16:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'std'[0m
+#include <cstddef>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreFoundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h:16:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <sys/types.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreFoundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:
+While building module 'Dispatch' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFStream.h:20:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/dispatch/dispatch.h:25:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <Availability.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreFoundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:
+While building module 'Dispatch' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFStream.h:20:
+While building module 'os_object' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/dispatch/dispatch.h:63:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/os/object.h:25:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <Availability.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreFoundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:
+While building module 'Dispatch' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFStream.h:20:
+While building module 'os_workgroup' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/dispatch/dispatch.h:64:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/os/workgroup.h:29:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/os/workgroup_base.h:8:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <sys/types.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h:6:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'CoreFoundation'[0m
+#include <CoreFoundation/CoreFoundation.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'ObjectiveC' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:6:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'ObjectiveC' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObject.h:6:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/objc/./objc.h:31:
+[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/stdlib.h:100:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'std'[0m
+#include <math.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'Security' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h:9:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h:27:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Security.framework/Headers/SecBase.h:27:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <TargetConditionals.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'Foundation' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:
+While building module 'CoreServices' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLError.h:15:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h:9:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreServices.framework/Headers/UTCoreTypes.h:19:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'CoreFoundation'[0m
+#include <CoreFoundation/CoreFoundation.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h:8:9: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Foundation'[0m
+#import <Foundation/Foundation.h>
+[0;1;32m ~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreGraphics' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h:10:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreGraphics' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBezierPath.h:10:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.h:8:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBase.h:11:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <TargetConditionals.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreImage' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h:13:
+In file included from <module-includes>:1:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.h:9:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImageDefines.h:11:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <TargetConditionals.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreImage' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h:13:
+While building module 'CoreVideo' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImage.h:15:
+In file included from <module-includes>:1:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CoreVideo.h:16:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <TargetConditionals.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreImage' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h:13:
+While building module 'ImageIO' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImage.h:16:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreImage' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h:13:
+While building module 'ImageIO' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImage.h:16:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h:10:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIOBase.h:16:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'CoreFoundation'[0m
+#include <CoreFoundation/CoreFoundation.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreImage' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h:13:
+While building module 'IOSurface' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImage.h:21:
+In file included from <module-includes>:1:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/IOSurface.framework/Headers/IOSurfaceBase.h:12:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <sys/cdefs.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'CoreImage' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIColor.h:13:
+While building module 'Metal' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIRenderDestination.h:22:
+In file included from <module-includes>:1:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.h:8:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h:8:9: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#import <os/availability.h>
+[0;1;32m ~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'QuartzCore' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h:10:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'QuartzCore' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h:10:
+In file included from <module-includes>:1:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h:9:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CoreAnimation.h:9:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CABase.h:16:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'CoreFoundation'[0m
+#include <CoreFoundation/CoreFoundation.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'QuartzCore' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIView.h:10:
+While building module 'OpenGLES' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAEAGLLayer.h:7:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h:4:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h:45:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h:4:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <os/availability.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'FileProvider' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h:15:
+In file included from <module-includes>:1:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h:16:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderDomain.h:8:9: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Foundation'[0m
+#import <Foundation/Foundation.h>
+[0;1;32m ~~~~~~~^
+[0mWhile building module 'UIKit' imported from /home/gaston/DVirtualHome/DVirtualHome.h:1:
+While building module 'UserNotifications' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UIKit.framework/Headers/UNNotificationResponse+UIKitAdditions.h:10:
+In file included from <module-includes>:1:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.h:8:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/NSString+UserNotifications.h:8:9: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Foundation'[0m
+#import <Foundation/Foundation.h>
+[0;1;32m ~~~~~~~^
+[0mWhile building module 'AudioToolbox' imported from /home/gaston/DVirtualHome/DVirtualHome.h:2:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h:14:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <Availability.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'AudioToolbox' imported from /home/gaston/DVirtualHome/DVirtualHome.h:2:
+While building module 'CoreAudioTypes' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioComponent.h:169:
+In file included from <module-includes>:1:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.h:8:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioBaseTypes.h:17:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <TargetConditionals.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'AudioToolbox' imported from /home/gaston/DVirtualHome/DVirtualHome.h:2:
+While building module 'CoreMIDI' imported from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AUAudioUnit.h:17:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreMIDI.framework/Headers/CoreMIDI.h:18:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/System/Library/Frameworks/CoreMIDI.framework/Headers/MIDIServices.h:73:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <Availability.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'notify' imported from Tweak.xm:2:
+In file included from <module-includes>:2:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/notify.h:29:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <sys/cdefs.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'CydiaSubstrate' imported from /home/gaston/theos/vendor/include/substrate.h:1:
+While building module 'MachO' imported from /home/gaston/theos/vendor/lib/CydiaSubstrate.framework/Headers/CydiaSubstrate.h:42:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:4:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std_config'[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:4:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std_config [system] [extern_c] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/c++/v1/module.modulemap:9:8: [0m[0;1;31merror: [0m[1mredefinition of module 'std'[0m
+module std [system] {
+[0;1;32m       ^
+[0m[1m/home/gaston/theos/toolchain/linux/iphone/bin/../include/c++/v1/module.modulemap:8:8: [0m[0;1;30mnote: [0mpreviously defined here[0m
+module std [system] {
+[0;1;32m       ^
+[0mWhile building module 'CydiaSubstrate' imported from /home/gaston/theos/vendor/include/substrate.h:1:
+While building module 'MachO' imported from /home/gaston/theos/vendor/lib/CydiaSubstrate.framework/Headers/CydiaSubstrate.h:42:
+In file included from <module-includes>:2:
+In file included from /home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/mach-o/dyld.h:31:
+[1m/home/gaston/theos/sdks/iPhoneOS16.5.sdk/usr/include/mach-o/loader.h:36:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'Darwin'[0m
+#include <mach/machine.h>
+[0;1;32m ~~~~~~~~^
+[0mWhile building module 'CydiaSubstrate' imported from /home/gaston/theos/vendor/include/substrate.h:1:
+In file included from <module-includes>:1:
+[1m/home/gaston/theos/vendor/lib/CydiaSubstrate.framework/Headers/CydiaSubstrate.h:42:10: [0m[0;1;31mfatal error: [0m[1mcould not build module 'MachO'[0m
+#include <mach-o/nlist.h>
+[0;1;32m ~~~~~~~~^
+[0m42 errors generated.
+make[3]: *** [/home/gaston/theos/makefiles/instance/rules.mk:417: /home/gaston/DVirtualHome/.theos/obj/debug/arm64e/Tweak.xm.d01766ce.o] Error 1
+rm /home/gaston/DVirtualHome/.theos/obj/debug/arm64e/Tweak.xm.mm
+make[2]: *** [/home/gaston/theos/makefiles/instance/library.mk:52: /home/gaston/DVirtualHome/.theos/obj/debug/arm64e/DVirtualHome.dylib] Error 2
+make[1]: *** [/home/gaston/theos/makefiles/instance/library.mk:37: internal-library-all_] Error 2
+make: *** [/home/gaston/theos/makefiles/master/rules.mk:146: DVirtualHome.all.tweak.variables] Error 2
